@@ -1,5 +1,5 @@
 {
-  "name": "API",
+  "name": "my_api",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/JhonyDomingos/Prisma-projetinho.git",
@@ -8,7 +8,6 @@
   "scripts": {
     "test": "echo\"Error: no test specified\" && exit 1",
     "dev": "tsnd --cls --rs --ignore-whatch node_modules src/server.ts"
-
   },
   "dependencies": {
     "express": "^4.18.2"
