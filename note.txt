@@ -1,0 +1,6 @@
+yarn add -D prisma or npm install -D prisma
+npx init prisma
+
+ORM -> Mapeamento de Objeto Relacional - Object Relational Mapping
+ele é uma simplificação de query SQL, ao inves de usar a query completa como SELECT * FROM table;
+ele usa um metodo que é ex findAll() - que executa internamente essa query SELECT * FROM table;

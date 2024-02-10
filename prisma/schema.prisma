@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client { // serve para fazer a conexão com o banco de dados
+  provider = "prisma-client-js"
+}
+
+datasource db { 
+  provider = "postgresql" 
+  url      = env("DATABASE_URL")
+}
+
+model Album  {
+  id BigInt @id @default(autoincrement())
+  title String
+  genre String
+  band String
+  year Int?
+  price String
+}
