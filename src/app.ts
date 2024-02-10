@@ -1,6 +1,5 @@
 import express, { Application } from "express";
-import { AlbumController } from "./controller";
-
+import { AlbumController } from "./controllers/controller";
 const app: Application = express();
 app.use(express.json())
 

@@ -1,5 +1,5 @@
 import { Request, Response, query } from "express";
-import { AlbumService } from "./service";
+import { AlbumService } from "../services/service";
 
 export class AlbumController {
   public create = (req: Request, res: Response): Response => {

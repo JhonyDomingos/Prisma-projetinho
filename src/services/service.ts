@@ -1,5 +1,7 @@
-import database from "./database";
-import { AlbumCreate, TAlbum, TGenreList } from "./interface";
+
+import database from "../database";
+import { AlbumCreate, TAlbum, TGenreList } from "../interfaces/interface";
+
 
 export class AlbumService {
   private genderNexId = (): number => {
