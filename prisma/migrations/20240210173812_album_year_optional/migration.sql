@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "Album" ALTER COLUMN "year" DROP NOT NULL;

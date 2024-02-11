@@ -1,12 +1,11 @@
 import express, { Application } from "express";
-import { AlbumController } from "./controllers/controller";
+import { albumRouter } from "./router/album.routes";
+import { genreRouter } from "./router/genre.routes";
+
 const app: Application = express();
-app.use(express.json())
+app.use(express.json());
 
-const albumController = new AlbumController();
-
-app.post("/api/albums", albumController.create);
-app.get("/api/albums", albumController.read);
-app.get("/api/genres", albumController.readGenres);
+app.use("/api/albums", albumRouter);
+app.use("/api/genres", genreRouter);
 
 export default app;
